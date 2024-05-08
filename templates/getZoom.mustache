@@ -1,0 +1,39 @@
+{{!
+    This file is part of Moodle: http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template local_test/manage
+
+
+    Example context (json):
+    {
+
+    }
+}}
+{{#zoom_meeting_participants}}
+    <li>
+        <em>id</em>: {{id}}
+        <em>userid</em>: {{userid}}
+        <em>zoomuserid</em>: {{zoomuserid}}
+        <em>uuid</em>: {{uuid}}
+        <em>user_email</em>: {{user_email}}
+        <em>join_time</em>: {{join_time}}
+        <em>leave_time</em>: {{leave_time}}
+        <em>duration</em>: {{duration}}
+        <em>name</em>: {{name}}
+        <em>detailsid</em>: {{detailsid}}
+    </li>
+{{/zoom_meeting_participants}}
